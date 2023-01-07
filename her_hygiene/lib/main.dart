@@ -3,6 +3,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:her_hygiene/Contraceptive%20Health%20Test/Quiz_screen.dart';
 import 'package:her_hygiene/Menstrual%20Health%20Test/self_test.dart';
+import 'package:her_hygiene/contraception/contraception.dart';
 import 'package:her_hygiene/intro.dart';
 import 'package:her_hygiene/products/product.dart';
 import 'package:her_hygiene/quiz_selection.dart';
@@ -44,7 +45,7 @@ class _HomeState extends State<Home> {
   final List pageToNavigate = [
     HomeScreen(),
     Product(),
-    QuizScreen(),
+    Contraception(),
     SelfTestScreen(),
   ];
 
