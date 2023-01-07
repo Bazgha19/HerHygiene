@@ -173,7 +173,7 @@ class _IntroState extends State<Intro> {
                             Text(
                               'Enter In The World Of HerHygiene',
                               style: TextStyle(
-                                  fontSize: 40.0,
+                                  fontSize: 30.0,
                                   color: Color.fromRGBO(179, 68, 98, 1)),
                               textAlign: TextAlign.center,
                             ),
