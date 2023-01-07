@@ -1,3 +1,5 @@
+import 'package:her_hygiene/quiz_selection.dart';
+
 import './result2.dart';
 import 'size_configs.dart';
 import 'package:flutter/material.dart';
@@ -117,9 +119,10 @@ class _QuizScreenState extends State<QuizScreen> {
             color: Color.fromRGBO(129, 19, 49, 1),
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pushNamed(context, 'quiz_option');
+        leading: TextButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => QuizOption()));
           },
           child: Icon(
             Icons.navigate_before_rounded,

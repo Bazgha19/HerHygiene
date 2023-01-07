@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:her_hygiene/home_screen.dart';
+import 'package:her_hygiene/main.dart';
 import 'size_configs.dart';
 
 class Result extends StatelessWidget {
@@ -48,9 +50,10 @@ class Result extends StatelessWidget {
             SizedBox(
               height: getProportionateScreenHeight(150),
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, 'home_screen');
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home()));
               },
               child: Container(
                 height: getProportionateScreenHeight(60),

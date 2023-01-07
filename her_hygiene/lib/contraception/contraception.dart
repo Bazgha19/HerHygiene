@@ -11,7 +11,21 @@ class _ContraceptionState extends State<Contraception> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Contaception"),
+      appBar: AppBar(
+        backgroundColor: Colors.pink.shade100,
+        title: Center(
+          child: Text(
+            'Contraception',
+            style: TextStyle(
+              color: Color.fromRGBO(179, 68, 98, 1),
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Georgia',
+              letterSpacing: 2.5,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
