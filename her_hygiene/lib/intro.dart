@@ -146,7 +146,7 @@ class _IntroState extends State<Intro> {
                             ),
                             SizedBox(height: 15.0),
                             Text(
-                              'Quizes helps you in analyzing your hygiene',
+                              'Quizzes helps you in analyzing your hygiene',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 color: Color.fromRGBO(195, 91, 118, 1),
