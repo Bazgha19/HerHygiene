@@ -73,6 +73,15 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      /* nitialRoute: 'home_screen', */
+      routes: {
+        'quiz_option': (context) => const QuizOption(),
+        'home_screen': (context) => const HomeScreen(),
+        'quiz_screen': (context) =>
+            const QuizScreen(), //screen  fro contraceptive health
+        'self_test': (context) =>
+            const SelfTestScreen(), //screen for Menstrual health quiz
+      },
     );
   }
 }
