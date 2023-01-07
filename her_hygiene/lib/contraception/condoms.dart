@@ -16,7 +16,7 @@ class CondomPage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 'Types of condoms',
-                style: Theme.of(context).textTheme.headline,
+                style: Theme.of(context).textTheme.headline1,
               ),
             ),
             ListTile(
@@ -42,41 +42,40 @@ class CondomPage extends StatelessWidget {
           ],
         ),
       ),
-          children: <Widget>[
-            DataTable(
-              columns: [
-                DataColumn(label: Text('Pros')),
-                DataColumn(label: Text('Cons')),
-              ],
-              rows: [
-                DataRow(
-                  cells: [
-                    DataCell(Text('Effective at preventing pregnancy and STIs')),
-                    DataCell(Text('May interfere with sexual pleasure or sensation')),
-                  ],
-                ),
-                DataRow(
-                  cells: [
-                    DataCell(Text('Inexpensive and easy to obtain')),
-                    DataCell(Text('May break or slip off if not used correctly')),
-                  ],
-                ),
-                DataRow(
-                  cells: [
-                    DataCell(Text('No long-term side effects')),
-                    DataCell(Text('Some people may be allergic to latex')),
-                  ],
-                ),
-                DataRow(
-                  cells: [
-                    DataCell(Text('Can be used in combination with other forms of contraception')),
-                    DataCell(Text('Must be stored and disposed of properly')),
-                  ],
-                ),
-              ],
-            ),
-          ],
-      ),
+      // children: <Widget>[
+      //   DataTable(
+      //     columns: [
+      //       DataColumn(label: Text('Pros')),
+      //       DataColumn(label: Text('Cons')),
+      //     ],
+      //     rows: [
+      //       DataRow(
+      //         cells: [
+      //           DataCell(Text('Effective at preventing pregnancy and STIs')),
+      //           DataCell(Text('May interfere with sexual pleasure or sensation')),
+      //         ],
+      //       ),
+      //       DataRow(
+      //         cells: [
+      //           DataCell(Text('Inexpensive and easy to obtain')),
+      //           DataCell(Text('May break or slip off if not used correctly')),
+      //         ],
+      //       ),
+      //       DataRow(
+      //         cells: [
+      //           DataCell(Text('No long-term side effects')),
+      //           DataCell(Text('Some people may be allergic to latex')),
+      //         ],
+      //       ),
+      //       DataRow(
+      //         cells: [
+      //           DataCell(Text('Can be used in combination with other forms of contraception')),
+      //           DataCell(Text('Must be stored and disposed of properly')),
+      //         ],
+      //       ),
+      //     ],
+      //   ),
+      // ],
     );
   }
 }

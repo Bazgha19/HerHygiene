@@ -239,7 +239,7 @@ class _IntroState extends State<Intro> {
           ? Container(
               height: 100.0,
               width: double.infinity,
-              color: Colors.white,
+              color: Colors.pink.shade100,
               child: TextButton(
                 onPressed: () {
                   Navigator.push(
