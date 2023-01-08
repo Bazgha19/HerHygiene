@@ -26,10 +26,11 @@ class _QuizOptionState extends State<QuizOption> {
         title: const Text(
           "Take Quiz",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 30,
             fontWeight: FontWeight.bold,
             fontFamily: 'Georgia',
-            color: Color.fromRGBO(129, 19, 49, 1),
+            color: Color.fromRGBO(179, 68, 98, 1),
+            letterSpacing: 2.5,
           ),
         ),
         leading: TextButton(
@@ -78,7 +79,7 @@ class _QuizOptionState extends State<QuizOption> {
                 height: getProportionateScreenHeight(40),
                 width: getProportionateScreenWidth(100),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(129, 19, 49, 0.8),
+                  color: Color.fromRGBO(179, 68, 98, 1),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -130,7 +131,7 @@ class _QuizOptionState extends State<QuizOption> {
                 height: getProportionateScreenHeight(40),
                 width: getProportionateScreenWidth(100),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(129, 19, 49, 0.8),
+                  color: Color.fromRGBO(179, 68, 98, 1),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(20),
                 ),
