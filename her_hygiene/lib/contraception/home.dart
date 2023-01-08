@@ -25,61 +25,32 @@ class _ContraceptionInfoPageState extends State<ContraceptionInfoPage> {
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Contraception Information'),
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Please select a type of contraception from the options below:',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: _options.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return GestureDetector(
-                    onTap: () => _onItemTapped(index),
-                    child: Container(
-                      height: 50,
-                      color:
-                          index == _selectedIndex ? Colors.blue : Colors.white,
-                      child: Center(
-                        child: Text(
-                          _options[index],
-                          style: TextStyle(
-                            color: index == _selectedIndex
-                                ? Colors.white
-                                : Colors.black,
-                            fontSize: 18,
-                          ),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                _selectedIndex > 0
-                    ? 'You selected: ${_options[_selectedIndex]}'
-                    : '',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Contraception Methods'),
+//       ),
+//       body: ListView.builder(
+//         itemCount: contraceptionMethods.length,
+//         itemBuilder: (context, index) {
+//           ContraceptionMethod method = contraceptionMethods[index];
+//           return Card(
+//             child: Column(
+//               mainAxisSize: MainAxisSize.min,
+//               children: <Widget>[
+//                 ListTile(
+//                   leading: Image.network(
+//                     method.imageUrl,
+//                     width: 50,
+//                     height: 50,
+//                   ),
+//                   title: Text(method.name),
+//                   subtitle: Text(method.description),
+//                 ),
+//               ],
+//             ),
+//           );
+//         },
+//       ),
+//     );

@@ -1,3 +1,5 @@
+import 'package:her_hygiene/main.dart';
+
 import './result.dart';
 import 'size_configs.dart';
 import 'package:flutter/material.dart';
@@ -129,9 +131,10 @@ class _SelfTestScreenState extends State<SelfTestScreen> {
             color: Color.fromRGBO(129, 19, 49, 1),
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pushNamed(context, 'quiz_option');
+        leading: TextButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Home()));
           },
           child: Icon(
             Icons.navigate_before_rounded,

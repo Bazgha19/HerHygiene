@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+/* import 'package:her_hygiene/Contraceptive%20Health%20Test/size_configs.dart'; */
 import 'package:her_hygiene/home_screen.dart';
 import 'package:her_hygiene/main.dart';
+import 'size_configs.dart';
 
 class Intro extends StatefulWidget {
   @override
@@ -38,7 +40,9 @@ class _IntroState extends State<Intro> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: Container(
@@ -56,7 +60,8 @@ class _IntroState extends State<Intro> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 40.0),
+            padding: EdgeInsets.symmetric(
+                vertical: getProportionateScreenHeight(40)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
@@ -73,13 +78,15 @@ class _IntroState extends State<Intro> {
                       'Skip',
                       style: TextStyle(
                         color: Color.fromRGBO(179, 68, 98, 1),
-                        fontSize: 20.0,
+                        fontSize: 18.0,
+                        fontFamily: 'Poppins',
                       ),
                     ),
                   ),
                 ),
                 Container(
-                  height: 600.0,
+                  /* height: 600.0, */
+                  height: getProportionateScreenHeight(600),
                   child: PageView(
                     physics: ClampingScrollPhysics(),
                     controller: _pageController,
@@ -99,24 +106,41 @@ class _IntroState extends State<Intro> {
                                 image: AssetImage(
                                   'assets/intro1.png',
                                 ),
-                                height: 300.0,
-                                width: 300.0,
+                                /* height: 300.0,
+                                width: 300.0, */
+                                height: getProportionateScreenHeight(300),
+                                width: getProportionateScreenWidth(300),
                               ),
                             ),
-                            SizedBox(height: 30.0),
-                            Text(
-                              'Hygiene In Your Hands',
-                              style: TextStyle(
-                                  fontSize: 40.0,
-                                  color: Color.fromRGBO(179, 68, 98, 1)),
-                              textAlign: TextAlign.center,
+                            SizedBox(
+                              /* height: 30.0 */
+                              height: getProportionateScreenHeight(30),
                             ),
-                            SizedBox(height: 15.0),
-                            Text(
-                              'The only app you will ever need to know about your hygiene',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                color: Color.fromRGBO(195, 91, 118, 1),
+                            Center(
+                              child: Text(
+                                'Hygiene In Your Hands',
+                                style: TextStyle(
+                                  fontSize: 50.0,
+                                  color: Color.fromRGBO(179, 68, 98, 1),
+                                  fontFamily: 'Moon',
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            SizedBox(
+                              /* height: 15.0 */
+                              height: getProportionateScreenHeight(10),
+                            ),
+                            Center(
+                              child: Text(
+                                'The only app you will ever need to know about your hygiene',
+                                style: TextStyle(
+                                  fontSize: 30.0,
+                                  color: Color.fromRGBO(195, 91, 118, 1),
+                                  fontFamily: 'Moon',
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ],
@@ -132,31 +156,57 @@ class _IntroState extends State<Intro> {
                                 image: AssetImage(
                                   'assets/track.png',
                                 ),
-                                height: 300.0,
-                                width: 300.0,
+                                /* height: 300.0,
+                                width: 300.0, */
+                                height: getProportionateScreenHeight(300),
+                                width: getProportionateScreenWidth(300),
                               ),
                             ),
-                            SizedBox(height: 30.0),
-                            Text(
-                              'Track Your Hygiene',
-                              style: TextStyle(
-                                  fontSize: 40.0,
-                                  color: Color.fromRGBO(179, 68, 98, 1)),
-                              textAlign: TextAlign.center,
+                            SizedBox(
+                              /* height: 30.0 */
+                              height: getProportionateScreenHeight(30),
                             ),
+<<<<<<< HEAD
                             SizedBox(height: 15.0),
                             Text(
                               'Quizzes helps you in analyzing your hygiene',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 color: Color.fromRGBO(195, 91, 118, 1),
+=======
+                            Center(
+                              child: Text(
+                                'Track Your Hygiene',
+                                style: TextStyle(
+                                  fontSize: 50.0,
+                                  color: Color.fromRGBO(179, 68, 98, 1),
+                                  fontFamily: 'Moon',
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            SizedBox(
+                              /* height: 15.0 */
+                              height: getProportionateScreenHeight(15),
+                            ),
+                            Center(
+                              child: Text(
+                                'Quizes helps you in analyzing your hygiene',
+                                style: TextStyle(
+                                  fontSize: 30.0,
+                                  fontFamily: 'Moon',
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromRGBO(195, 91, 118, 1),
+                                ),
+>>>>>>> 6e9569c8c54f93d1067610dc0ea11736d380794e
                               ),
                             ),
                           ],
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(40.0),
+                        padding: const EdgeInsets.all(30.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -165,24 +215,35 @@ class _IntroState extends State<Intro> {
                                 image: AssetImage(
                                   'assets/start.png',
                                 ),
-                                height: 300.0,
-                                width: 300.0,
+                                /* height: 300.0,
+                                width: 300.0, */
+                                height: getProportionateScreenHeight(300),
+                                width: getProportionateScreenWidth(300),
                               ),
                             ),
-                            SizedBox(height: 30.0),
-                            Text(
-                              'Enter In The World Of HerHygiene',
-                              style: TextStyle(
-                                  fontSize: 40.0,
-                                  color: Color.fromRGBO(179, 68, 98, 1)),
-                              textAlign: TextAlign.center,
+                            SizedBox(height: getProportionateScreenHeight(5)),
+                            Center(
+                              child: Text(
+                                'Enter In The World Of HerHygiene',
+                                style: TextStyle(
+                                  fontSize: 45.0,
+                                  color: Color.fromRGBO(179, 68, 98, 1),
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Moon',
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
-                            SizedBox(height: 15.0),
-                            Text(
-                              'It take less then a minute to enter and enjoy HerHygiene',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                color: Color.fromRGBO(195, 91, 118, 1),
+                            SizedBox(height: getProportionateScreenHeight(5)),
+                            Center(
+                              child: Text(
+                                'It take less then a minute to enter and enjoy HerHygiene',
+                                style: TextStyle(
+                                  fontSize: 30.0,
+                                  fontFamily: 'Moon',
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromRGBO(195, 91, 118, 1),
+                                ),
                               ),
                             ),
                           ],
@@ -214,9 +275,9 @@ class _IntroState extends State<Intro> {
                                 Text(
                                   'Next',
                                   style: TextStyle(
-                                    color: Color.fromRGBO(179, 68, 98, 1),
-                                    fontSize: 22.0,
-                                  ),
+                                      color: Color.fromRGBO(179, 68, 98, 1),
+                                      fontSize: 18.0,
+                                      fontFamily: 'Poppins'),
                                 ),
                                 SizedBox(width: 10.0),
                                 Icon(
@@ -237,7 +298,7 @@ class _IntroState extends State<Intro> {
       ),
       bottomSheet: _currentPage == _numPages - 1
           ? Container(
-              height: 100.0,
+              height: 80.0,
               width: double.infinity,
               color: Colors.pink.shade100,
               child: TextButton(
@@ -255,6 +316,7 @@ class _IntroState extends State<Intro> {
                       style: TextStyle(
                         color: Color.fromRGBO(179, 68, 98, 1),
                         fontSize: 20.0,
+                        fontFamily: 'Poppins',
                         fontWeight: FontWeight.bold,
                       ),
                     ),

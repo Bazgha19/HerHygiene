@@ -1,8 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:her_hygiene/Contraceptive%20Health%20Test/Quiz_screen.dart';
-import 'package:her_hygiene/Menstrual%20Health%20Test/self_test.dart';
 import 'package:her_hygiene/contraception/contraception.dart';
 import 'package:her_hygiene/intro.dart';
 import 'package:her_hygiene/products/product.dart';
@@ -22,12 +20,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
         splash: Image.asset('assets/HerLogo.png'),
         backgroundColor: Colors.pink.shade100,
-        splashIconSize: 80.0,
-        splashTransition: SplashTransition.rotationTransition,
-        duration: 1000,
+        splashIconSize: 500.0,
+        splashTransition: SplashTransition.sizeTransition,
+        duration: 2000,
         nextScreen: Intro(),
       ),
     );
@@ -46,7 +45,7 @@ class _HomeState extends State<Home> {
     HomeScreen(),
     Product(),
     Contraception(),
-    SelfTestScreen(),
+    QuizOption(),
   ];
 
   @override
@@ -59,7 +58,7 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: CurvedNavigationBar(
           animationDuration: Duration(milliseconds: 150),
           backgroundColor: Colors.white,
-          color: Colors.pink.shade50,
+          color: Colors.pink.shade100,
           onTap: (index) {
             setState(() {
               onClick = index;
@@ -70,19 +69,10 @@ class _HomeState extends State<Home> {
             Icon(Icons.home),
             Icon(Icons.water_drop),
             Icon(Icons.medical_information),
-            Icon(Icons.people),
+            Icon(Icons.quiz),
           ],
         ),
       ),
-      /* nitialRoute: 'home_screen', */
-      routes: {
-        'quiz_option': (context) => const QuizOption(),
-        'home_screen': (context) => const HomeScreen(),
-        'quiz_screen': (context) =>
-            const QuizScreen(), //screen  fro contraceptive health
-        'self_test': (context) =>
-            const SelfTestScreen(), //screen for Menstrual health quiz
-      },
     );
   }
 }

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:her_hygiene/Contraceptive%20Health%20Test/Quiz_screen.dart';
+import 'package:her_hygiene/Menstrual%20Health%20Test/self_test.dart';
+import 'package:her_hygiene/home_screen.dart';
+import 'package:her_hygiene/main.dart';
 import 'package:her_hygiene/size_configs.dart';
 import 'size_configs.dart';
 
@@ -18,19 +22,21 @@ class _QuizOptionState extends State<QuizOption> {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Colors.pink[50],
+        backgroundColor: Colors.pink[100],
         title: const Text(
           "Take Quiz",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 30,
             fontWeight: FontWeight.bold,
             fontFamily: 'Georgia',
-            color: Color.fromRGBO(129, 19, 49, 1),
+            color: Color.fromRGBO(179, 68, 98, 1),
+            letterSpacing: 2.5,
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pushNamed(context, 'home_screen');
+        leading: TextButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Home()));
           },
           child: Icon(
             Icons.navigate_before_rounded,
@@ -62,9 +68,10 @@ class _QuizOptionState extends State<QuizOption> {
               ),
             ),
             //button for taking the quiz
-            GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, 'self_test');
+            TextButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SelfTestScreen()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(
@@ -72,7 +79,7 @@ class _QuizOptionState extends State<QuizOption> {
                 height: getProportionateScreenHeight(40),
                 width: getProportionateScreenWidth(100),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(129, 19, 49, 0.8),
+                  color: Color.fromRGBO(179, 68, 98, 1),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -113,9 +120,10 @@ class _QuizOptionState extends State<QuizOption> {
             ),
 
             //button for taking the quiz
-            GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, 'quiz_screen');
+            TextButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuizScreen()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(
@@ -123,7 +131,7 @@ class _QuizOptionState extends State<QuizOption> {
                 height: getProportionateScreenHeight(40),
                 width: getProportionateScreenWidth(100),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(129, 19, 49, 0.8),
+                  color: Color.fromRGBO(179, 68, 98, 1),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(20),
                 ),
