@@ -12,6 +12,7 @@ dependencies:
   curved_navigation_bar: ^1.0.3
   flutter:
     sdk: flutter
+  folding_cell: ^1.0.2
   introduction_screen: ^3.1.2
   linear_gradient: ^0.1.12
 
