@@ -42,6 +42,7 @@ class _IntroState extends State<Intro> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: Container(
@@ -196,7 +197,7 @@ class _IntroState extends State<Intro> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(40.0),
+                        padding: const EdgeInsets.all(30.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -216,7 +217,7 @@ class _IntroState extends State<Intro> {
                               child: Text(
                                 'Enter In The World Of HerHygiene',
                                 style: TextStyle(
-                                  fontSize: 50.0,
+                                  fontSize: 45.0,
                                   color: Color.fromRGBO(179, 68, 98, 1),
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Moon',
@@ -288,7 +289,7 @@ class _IntroState extends State<Intro> {
       ),
       bottomSheet: _currentPage == _numPages - 1
           ? Container(
-              height: 100.0,
+              height: 80.0,
               width: double.infinity,
               color: Colors.pink.shade100,
               child: TextButton(
