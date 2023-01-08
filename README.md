@@ -11,3 +11,4 @@ We have thought of implementing the following in future:
 2. A special helpline number would be integrated which will connect the user to doctors where they can discuss their medical situation further.
 3. We have also thought of having a personalised clinic tracking system, which will track the clinics in 10km radius around their area.
 # Some Glimpses of our App
+https://www.canva.com/design/DAFXDCT6I1w/FKio3nHaZ_sWfgq3QIJ9pA/edit?utm_content=DAFXDCT6I1w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
