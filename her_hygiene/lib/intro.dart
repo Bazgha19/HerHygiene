@@ -147,14 +147,14 @@ class _IntroState extends State<Intro> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(40.0),
+                        padding: const EdgeInsets.all(30.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Center(
                               child: Image(
                                 image: AssetImage(
-                                  'assets/track.png',
+                                  'assets/start.png',
                                 ),
                                 /* height: 300.0,
                                 width: 300.0, */
@@ -162,34 +162,20 @@ class _IntroState extends State<Intro> {
                                 width: getProportionateScreenWidth(300),
                               ),
                             ),
-                            SizedBox(
-                              /* height: 30.0 */
-                              height: getProportionateScreenHeight(30),
-                            ),
-<<<<<<< HEAD
-                            SizedBox(height: 15.0),
-                            Text(
-                              'Quizzes helps you in analyzing your hygiene',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                color: Color.fromRGBO(195, 91, 118, 1),
-=======
+                            SizedBox(height: getProportionateScreenHeight(5)),
                             Center(
                               child: Text(
                                 'Track Your Hygiene',
                                 style: TextStyle(
-                                  fontSize: 50.0,
+                                  fontSize: 45.0,
                                   color: Color.fromRGBO(179, 68, 98, 1),
-                                  fontFamily: 'Moon',
                                   fontWeight: FontWeight.bold,
+                                  fontFamily: 'Moon',
                                 ),
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            SizedBox(
-                              /* height: 15.0 */
-                              height: getProportionateScreenHeight(15),
-                            ),
+                            SizedBox(height: getProportionateScreenHeight(5)),
                             Center(
                               child: Text(
                                 'Quizes helps you in analyzing your hygiene',
@@ -199,7 +185,6 @@ class _IntroState extends State<Intro> {
                                   fontWeight: FontWeight.w600,
                                   color: Color.fromRGBO(195, 91, 118, 1),
                                 ),
->>>>>>> 6e9569c8c54f93d1067610dc0ea11736d380794e
                               ),
                             ),
                           ],
