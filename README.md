@@ -39,9 +39,8 @@ We have thought of implementing the following in future:
 
 https://www.canva.com/design/DAFXDCT6I1w/FKio3nHaZ_sWfgq3QIJ9pA/edit?utm_content=DAFXDCT6I1w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-*We believe in empowering women with knowledge and tools to take control of their reproductive health. We hope our app helps you on your journey.*
+We believe in empowering women with knowledge and tools to take control of their reproductive health. We hope our app helps you on your journey.
 
 __Thank you for using our app.__
 
 If you have any suggestions and improvements, just fork the project, push the changes and open a pull request!!
- 
