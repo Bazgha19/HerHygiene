@@ -166,6 +166,14 @@ class _IntroState extends State<Intro> {
                               /* height: 30.0 */
                               height: getProportionateScreenHeight(30),
                             ),
+<<<<<<< HEAD
+                            SizedBox(height: 15.0),
+                            Text(
+                              'Quizzes helps you in analyzing your hygiene',
+                              style: TextStyle(
+                                fontSize: 16.0,
+                                color: Color.fromRGBO(195, 91, 118, 1),
+=======
                             Center(
                               child: Text(
                                 'Track Your Hygiene',
@@ -191,6 +199,7 @@ class _IntroState extends State<Intro> {
                                   fontWeight: FontWeight.w600,
                                   color: Color.fromRGBO(195, 91, 118, 1),
                                 ),
+>>>>>>> 6e9569c8c54f93d1067610dc0ea11736d380794e
                               ),
                             ),
                           ],
