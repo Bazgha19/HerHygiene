@@ -24,9 +24,6 @@ flutter:
 
   assets:
     - assets/
-    # - assets/bgrnd.png
-    # - assets/pink_quiz.png
-    # - assets/contra_quiz.png
 
   fonts:
     - family: Poppins
