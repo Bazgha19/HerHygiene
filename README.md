@@ -2,7 +2,7 @@
 
 ## *Welcome to our Women's Health App*
 
-Our app is designed to help women monitor and learn about menstrual hygiene, as well as provide information on various contraception methods. It especially helps wpmen understand about menstrual and reproductive health.
+Our app is designed to help women monitor and learn about menstrual hygiene, as well as provide information on various contraception methods. It especially helps women understand about menstrual and reproductive health.
 
 With our app, you can:
 
